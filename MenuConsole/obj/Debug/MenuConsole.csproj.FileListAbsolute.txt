@@ -1,0 +1,10 @@
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\bin\Debug\MenuConsole.exe.config
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\bin\Debug\MenuConsole.exe
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\bin\Debug\MenuConsole.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\obj\Debug\MenuConsole.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\obj\Debug\MenuConsole.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\obj\Debug\MenuConsole.exe
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\obj\Debug\MenuConsole.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\bin\Debug\MenuRepo.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\bin\Debug\MenuRepo.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuConsole\obj\Debug\MenuConsole.csproj.CopyComplete

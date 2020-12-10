@@ -12,7 +12,7 @@ namespace Menu
 
         public Menu()
         {
-
+            Ingredients = new List<string>();
         }
 
         public Menu(int num, string name, string desc, List<string> ingredients, decimal price)

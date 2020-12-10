@@ -21,7 +21,7 @@ namespace Menu
         //U
         public bool UpdateExistingMenuItem(int number, Menu newMenuItem)
         {
-            Menu oldItem = GetMenuItemByNumer(number);
+            Menu oldItem = GetMenuItemByNumber(number);
             if(oldItem != null)
             {
                 oldItem.MealName = newMenuItem.MealName;
@@ -37,7 +37,7 @@ namespace Menu
         //D
         public bool RemoveMenuItem(int number)
         {
-            Menu item = GetMenuItemByNumer(number);
+            Menu item = GetMenuItemByNumber(number);
             if(item != null)
             {
                 int initialCount = menuItems.Count;
@@ -54,7 +54,7 @@ namespace Menu
             return false;
         }
 
-        public Menu GetMenuItemByNumer(int number)
+        public Menu GetMenuItemByNumber(int number)
         {
             foreach(Menu item in menuItems)
             {
