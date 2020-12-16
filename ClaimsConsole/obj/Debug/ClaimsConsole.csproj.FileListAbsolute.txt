@@ -1,0 +1,7 @@
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\obj\Debug\ClaimsConsole.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\obj\Debug\ClaimsConsole.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\bin\Debug\ClaimsConsole.exe.config
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\bin\Debug\ClaimsConsole.exe
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\bin\Debug\ClaimsConsole.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\obj\Debug\ClaimsConsole.exe
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\obj\Debug\ClaimsConsole.pdb

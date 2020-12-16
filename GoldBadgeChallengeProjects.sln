@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeRepo", "BadgeRepo\BadgeRepo.csproj", "{C66EB541-40DB-4F33-BA26-EF124071AAE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgesConsole", "BadgesConsole\BadgesConsole.csproj", "{C66FE924-EDB4-479F-9830-0C6F8E910E39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadgesConsole", "BadgesConsole\BadgesConsole.csproj", "{C66FE924-EDB4-479F-9830-0C6F8E910E39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuRepo", "MenuRepo\MenuRepo.csproj", "{CA5CBF8B-1AB2-4F33-9972-0D6CA779BED0}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimRepo", "ClaimRepo\ClaimRepo.csproj", "{9CA8C45A-8C5D-4EF8-94E1-FC703BC6EFFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsConsole", "ClaimsConsole\ClaimsConsole.csproj", "{FB858F0F-FC91-48ED-9D4A-3FD97F5CC6A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuRepo_Tests", "MenuRepo_Tests\MenuRepo_Tests.csproj", "{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FB858F0F-FC91-48ED-9D4A-3FD97F5CC6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB858F0F-FC91-48ED-9D4A-3FD97F5CC6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB858F0F-FC91-48ED-9D4A-3FD97F5CC6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

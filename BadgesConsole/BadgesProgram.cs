@@ -1,6 +1,6 @@
 ﻿namespace Badges
 {
-    class Program
+    class BadgesProgram
     {
         static void Main(string[] args)
         {

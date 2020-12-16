@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Menu
+namespace MenuItems
 {
     public class Menu
     {
@@ -22,6 +22,20 @@ namespace Menu
             Description = desc;
             Ingredients = ingredients;
             Price = price;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if(obj is Menu)
+            {
+                var that = obj as Menu;
+                return this.ItemNumber == that.ItemNumber
+                    && this.MealName == that.MealName
+                    && this.Description == that.Description
+                    && this.Ingredients == that.Ingredients
+                    && this.Price == that.Price;
+            }
+            return false;
         }
     }
 }

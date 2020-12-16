@@ -1,0 +1,13 @@
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgesConsole.exe
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgesConsole.deps.json
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgesConsole.runtimeconfig.json
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgesConsole.runtimeconfig.dev.json
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgesConsole.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgesConsole.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.AssemblyInfoInputs.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.AssemblyInfo.cs
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.genruntimeconfig.cache

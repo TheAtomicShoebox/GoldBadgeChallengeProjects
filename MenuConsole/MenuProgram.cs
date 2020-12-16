@@ -1,4 +1,4 @@
-﻿namespace Menu
+﻿namespace MenuItems
 {
     class MenuProgram
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Menu
+namespace MenuItems
 {
     public class MenuUI
     {
@@ -55,8 +55,8 @@ namespace Menu
             Console.Clear();
             Menu newItem = new Menu();
             Console.WriteLine("Menu Item Number: (q to quit)");
-            newItem.ItemNumber = GetIntResponse("q");
-            if (newItem.ItemNumber == -1)
+            newItem.ItemNumber = GetIntResponse("q", "Menu Item Number: (q to quit)");
+            if (newItem.ItemNumber == 0)
             {
                 return false;
             }
@@ -98,26 +98,26 @@ namespace Menu
                 Console.Clear();
                 DisplayMenuItem(item);
                 Menu newItem = new Menu();
-                Console.WriteLine("Menu Item Number: (q to quit)");
-                newItem.ItemNumber = GetIntResponse("q");
+                Console.WriteLine("New Menu Item Number: (q to quit)");
+                newItem.ItemNumber = GetIntResponse("q", "Menu Item Number: (q to quit)");
                 if (newItem.ItemNumber == -1)
                 {
                     return false;
                 }
-                Console.WriteLine("Meal Name: (q to quit)");
+                Console.WriteLine("New Meal Name: (q to quit)");
                 newItem.MealName = GetResponse("q");
                 if (newItem.MealName == null)
                 {
                     return false;
                 }
-                Console.WriteLine("Description: (q to quit)");
+                Console.WriteLine("New Description: (q to quit)");
                 newItem.Description = GetResponse("q");
                 if (newItem.Description == null)
                 {
                     return false;
                 }
                 AddIngredients(newItem);
-                Console.WriteLine("Price: (q to quit)");
+                Console.WriteLine("New Price: (q to quit)");
                 newItem.Price = GetDecimalResponse("q");
                 if (newItem.Price == -1)
                 {
@@ -148,11 +148,19 @@ namespace Menu
 
         private void DeleteMenuItems()
         {
-            Console.WriteLine("DeleteMenuItems");
+            Menu item = UserSelectMenuItem();
+            DisplayMenuItem(item);
+            Console.WriteLine("Are you sure you want to remove this item?");
+            if(GetYesNoResponse("y", "n"))
+            {
+                menuRepo.RemoveMenuItem(item.ItemNumber);
+                Console.WriteLine("Item removed");
+            }
         }
 
         private void DisplayMenuItems()
         {
+            Console.WriteLine();
             List<Menu> items = menuRepo.GetMenuItems();
             foreach(Menu item in items)
             {
@@ -226,7 +234,7 @@ namespace Menu
             return false;
         }
 
-        private int GetIntResponse(string quitCharacter)
+        private int GetIntResponse(string quitCharacter, string prompt = "")
         {
             string response = Console.ReadLine();
             if (response.ToLower() == quitCharacter.ToLower())
@@ -242,9 +250,9 @@ namespace Menu
             {
                 Console.WriteLine("Invalid Response");
                 PressToContinue();
-                GetIntResponse(quitCharacter);
+                Console.WriteLine($"{prompt}");
+                return GetIntResponse(quitCharacter);
             }
-            return -1;
         }
 
         private decimal GetDecimalResponse(string quitCharacter)

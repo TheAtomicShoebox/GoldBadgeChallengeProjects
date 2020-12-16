@@ -1,0 +1,16 @@
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\MenuRepo_Tests.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\MenuRepo_Tests.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\MenuRepo.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\MenuRepo.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\obj\Debug\MenuRepo_Tests.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\obj\Debug\MenuRepo_Tests.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\obj\Debug\MenuRepo_Tests.csproj.CopyComplete
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\obj\Debug\MenuRepo_Tests.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\MenuRepo_Tests\obj\Debug\MenuRepo_Tests.pdb

@@ -8,61 +8,23 @@ namespace Claims
 {
     public class ClaimRepo
     {
-        private List<Claim> claimList = new List<Claim>();
+        private Queue<Claim> claimQueue = new Queue<Claim>();
 
         //C
         public void AddNewClaim(Claim claim)
         {
-            claimList.Add(claim);
+            claimQueue.Enqueue(claim);
         }
 
         //R
-        public List<Claim> GetClaims()
+        public Queue<Claim> GetClaims()
         {
-            return claimList;
+            return claimQueue;
         }
 
-        //U
-        public bool UpdateExistingClaim(int id, Claim newClaim)
+        /*public Claim FindClaimById(int id)
         {
-            Claim oldClaim = FindClaimById(id);
-            if(oldClaim != null)
-            {
-                oldClaim.ClaimID = newClaim.ClaimID;
-                oldClaim.Type = newClaim.Type;
-                oldClaim.Description = newClaim.Description;
-                oldClaim.Amount = newClaim.Amount;
-                oldClaim.DateOfIncident = newClaim.DateOfIncident;
-                oldClaim.DateOfClaim = newClaim.DateOfClaim;
-                oldClaim.IsValid = newClaim.IsValid;
-                return true;
-            }
-            return false;
-        }
-
-        //D
-        public bool RemoveClaim(int id)
-        {
-            Claim claim = FindClaimById(id);
-            if(claim != null)
-            {
-                int initialCount = claimList.Count;
-                claimList.Remove(claim);
-                if(initialCount > claimList.Count)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            return false;
-        }
-
-        public Claim FindClaimById(int id)
-        {
-            foreach(Claim claim in claimList)
+            foreach(Claim claim in claimQueue)
             {
                 if(claim.ClaimID == id)
                 {
@@ -70,6 +32,6 @@ namespace Claims
                 }
             }
             return null;
-        }
+        }*/
     }
 }
