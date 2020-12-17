@@ -19,13 +19,18 @@ namespace Badges
         }
 
         //U
+        /// <summary>
+        /// NEW IDS WILL NOT BE CHANGED
+        /// </summary>
+        /// <param name="id">id of the badge to change</param>
+        /// <param name="badge">badge to update to. IDS WILL NOT BE CHANGED</param>
+        /// <returns></returns>
         public bool UpdateExistingBadge(int id, Badge badge)
         {
             Badge oldBadge = FindBadgeById(id);
             if(oldBadge != null)
             {
-                oldBadge.ID = badge.ID;
-                oldBadge.DoorNames = badge.DoorNames;
+                badgeDictionary[id] = badge.DoorNames;
                 return true;
             }
             return false;
