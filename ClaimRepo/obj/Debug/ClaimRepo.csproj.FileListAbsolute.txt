@@ -3,3 +3,4 @@ D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo\bin\D
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo\obj\Debug\ClaimRepo.csproj.CoreCompileInputs.cache
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo\obj\Debug\ClaimRepo.dll
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo\obj\Debug\ClaimRepo.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo\obj\Debug\ClaimRepo.csprojAssemblyReference.cache

@@ -55,20 +55,88 @@ namespace Claims
         {
             Console.Clear();
             Queue<Claim> claims = claimRepo.GetClaims();
-            DisplayClaim(claims.Peek());
-            Console.WriteLine("Do you want to handle this now? (y/n)");
-            if (GetYesNoResponse("y", "n"))
+            try
             {
-                Claim claim = claims.Dequeue();
+                Claim temp = claims.Peek();
+                if (temp != null)
+                {
+                    DisplayClaim(temp, true);
+                    Console.WriteLine("Do you want to handle this now? (y/n)");
+                    if (GetYesNoResponse("y", "n"))
+                    {
+                        Claim claim = claims.Dequeue();
+                        HandleClaims();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No Claims to handle at this time");
+                }
+            }
+            catch(InvalidOperationException ex)
+            {
+                Console.WriteLine("No Claims to handle at this time");
             }
         }
 
-        private void AddClaims()
+        private bool AddClaims()
         {
             Console.Clear();
             Claim newClaim = new Claim();
-            Console.WriteLine("Enter the claim id: (q to quit)");
-            newClaim.ClaimID = GetIntResponse("q", "Enter the claim id: (q to quit)");
+            Console.WriteLine("Claim id: (q to quit)");
+            newClaim.ClaimID = GetIntResponse("q", "Claim id: (q to quit)");
+            if(newClaim.ClaimID == -1)
+            {
+                return false;
+            }
+            Console.WriteLine("Claim Type: (q to quit)");
+            Console.WriteLine("Possible types\n" +
+                              "Car\n" +
+                              "Theft\n" +
+                              "Home");
+            ClaimType? temp = GetClaimTypeResponse("q", "Claim Type: (q to quit)");
+            if(temp == null)
+            {
+                return false;
+            }
+            newClaim.Type = temp.Value;
+            Console.WriteLine("Description: (q to quit)");
+            newClaim.Description = GetResponse("q", "Description: (q to quit)");
+            if(newClaim.Description == null)
+            {
+                return false;
+            }
+            Console.Write("Claim amount: (q to quit)\n$");
+            newClaim.Amount = GetDecimalResponse("q", "Claim amount: (q to quit)\n$");
+            if(newClaim.Amount == -1)
+            {
+                return false;
+            }
+            newClaim.Amount = Math.Round(newClaim.Amount, 2);
+            Console.WriteLine("Date of Incident: (q to quit)");
+            DateTime? tempDateTime = GetDateTimeResponse("q", "Date of Incident: (q to quit)");
+            if(tempDateTime == null)
+            {
+                return false;
+            }
+            newClaim.DateOfIncident = tempDateTime.Value;
+            Console.WriteLine("Date of Claim: (q to quit)");
+            tempDateTime = GetDateTimeResponse("q", "Date of Claim: (q to quit)");
+            if (tempDateTime == null)
+            {
+                return false;
+            }
+            newClaim.DateOfClaim = tempDateTime.Value;
+            newClaim.IsValid = true;
+            claimRepo.AddNewClaim(newClaim);
+            Console.WriteLine("Claim added");
+            PressToContinue();
+            Console.WriteLine("Add another item? (y/n)");
+            if (GetYesNoResponse("y", "n"))
+            {
+                return AddClaims();
+            }
+            return true;
         }
 
         private void DisplayClaims()
@@ -81,29 +149,23 @@ namespace Claims
             }
         }
 
-        private void DisplayClaim(Claim claim)
+        private void DisplayClaim(Claim claim, bool verbose = false)
         {
-            Console.WriteLine($"{claim.ClaimID}\t{claim.Type}\t{claim.Description, -30}{claim.Amount}\t{claim.DateOfIncident, -10}{claim.DateOfClaim, -10}{claim.IsValid}");
-        }
-
-        /*private Claim UserSelectClaim()
-        {
-            DisplayClaims();
-            Console.WriteLine("Claim id (q to quit):");
-            int response = GetIntResponse("q");
-            if (response != -1)
+            if (!verbose)
             {
-                Claim claim = claimRepo.FindClaimById(response);
-                if (claim != null)
-                {
-                    return claim;
-                }
-                Console.WriteLine("Invalid Response");
-                PressToContinue();
-                return UserSelectClaim();
+                Console.WriteLine($"{claim.ClaimID}\t{claim.Type}\t{claim.Description,-30}{claim.Amount}\t{claim.DateOfIncident.ToString("d"),-15}{claim.DateOfClaim.ToString("d"),-15}{claim.IsValid,-5}");
             }
-            return null;
-        }*/
+            else
+            {
+                Console.WriteLine($"ClaimID: {claim.ClaimID}\n" +
+                    $"Type: {claim.Type}\n" +
+                    $"Description: {claim.Description}\n" +
+                    $"Amount: {claim.Amount}\n" +
+                    $"DateOfAccident: {claim.DateOfIncident.ToString("d")}\n" +
+                    $"DateOfClaim: {claim.DateOfClaim.ToString("d")}\n" +
+                    $"IsValid: {claim.IsValid}\n");
+            }
+        }
 
         private string GetResponse(string quitCharacter, string prompt = "")
         {
@@ -138,7 +200,7 @@ namespace Claims
             }
             try
             {
-                ClaimType type = (ClaimType)Enum.Parse(typeof(ClaimType), response);
+                ClaimType type = (ClaimType)Enum.Parse(typeof(ClaimType), response, true);
                 return type;
             }
             catch(Exception ex)
@@ -155,7 +217,7 @@ namespace Claims
             string response = Console.ReadLine();
             if (response.ToLower() == quitCharacter.ToLower())
             {
-                return 0;
+                return -1;
             }
             try
             {
@@ -171,12 +233,12 @@ namespace Claims
             }
         }
 
-        private decimal GetDecimalResponse(string quitCharacter)
+        private decimal GetDecimalResponse(string quitCharacter, string prompt = "")
         {
             string response = Console.ReadLine();
             if (response.ToLower() == quitCharacter.ToLower())
             {
-                return 0;
+                return -1;
             }
             try
             {
@@ -187,12 +249,13 @@ namespace Claims
             {
                 Console.WriteLine("Invalid Response");
                 PressToContinue();
-                GetDecimalResponse(quitCharacter);
+                Console.WriteLine($"{prompt}");
+                GetDecimalResponse(quitCharacter, prompt);
             }
             return -1;
         }
 
-        private DateTime? GetDateTimeResponse(string quitCharacter)
+        private DateTime? GetDateTimeResponse(string quitCharacter, string prompt = "")
         {
             string response = Console.ReadLine();
             if(response.ToLower() == quitCharacter.ToLower())
@@ -202,7 +265,7 @@ namespace Claims
             try
             {
                 DateTime dateTimeResponse = DateTime.Parse(response);
-                Console.WriteLine($"Is this correct: {dateTimeResponse} (y/n)");
+                Console.WriteLine($"Is this correct: {dateTimeResponse.ToString("d")} (y/n)");
                 if(!GetYesNoResponse("y", "n"))
                 {
                     GetDateTimeResponse(quitCharacter);
@@ -213,7 +276,8 @@ namespace Claims
             {
                 Console.WriteLine("Invalid Response");
                 PressToContinue();
-                GetDateTimeResponse(quitCharacter);
+                Console.WriteLine($"{prompt}");
+                GetDateTimeResponse(quitCharacter, prompt);
             }
             return null;
         }

@@ -5,3 +5,6 @@ D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\b
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\bin\Debug\ClaimsConsole.pdb
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\obj\Debug\ClaimsConsole.exe
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\obj\Debug\ClaimsConsole.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\bin\Debug\ClaimRepo.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\bin\Debug\ClaimRepo.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimsConsole\obj\Debug\ClaimsConsole.csproj.CopyComplete
