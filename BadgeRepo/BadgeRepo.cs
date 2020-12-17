@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Badges
 {
     public class BadgeRepo
     {
-        private List<Badge> badgeList = new List<Badge>();
+        private Dictionary<int, List<string>> badgeDictionary = new Dictionary<int, List<string>>();
 
         //C
         public void AddNewBadge(Badge badge)
         {
-            badgeList.Add(badge);
+            badgeDictionary.Add(badge.ID, badge.DoorNames);
         }
 
         //R
-        public List<Badge> GetBadges()
+        public Dictionary<int, List<string>> GetBadges()
         {
-            return badgeList;
+            return badgeDictionary;
         }
 
         //U
@@ -29,7 +25,6 @@ namespace Badges
             if(oldBadge != null)
             {
                 oldBadge.ID = badge.ID;
-                oldBadge.Name = badge.Name;
                 oldBadge.DoorNames = badge.DoorNames;
                 return true;
             }
@@ -42,9 +37,9 @@ namespace Badges
             Badge badge = FindBadgeById(id);
             if(badge != null)
             {
-                int initialCount = badgeList.Count;
-                badgeList.Remove(badge);
-                if(initialCount > badgeList.Count)
+                int initialCount = badgeDictionary.Count;
+                badgeDictionary.Remove(badge.ID);
+                if(initialCount > badgeDictionary.Count)
                 {
                     return true;
                 }
@@ -58,11 +53,15 @@ namespace Badges
 
         public Badge FindBadgeById(int id)
         {
-            foreach(Badge badge in badgeList)
+            foreach(KeyValuePair<int, List<string>> badge in badgeDictionary)
             {
-                if(badge.ID == id)
+                if(badge.Key == id)
                 {
-                    return badge;
+                    return new Badge()
+                    {
+                        DoorNames = badge.Value,
+                        ID = badge.Key
+                    };
                 }
             }
             return null;
