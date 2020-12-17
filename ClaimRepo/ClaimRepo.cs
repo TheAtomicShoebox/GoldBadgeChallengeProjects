@@ -21,17 +21,5 @@ namespace Claims
         {
             return claimQueue;
         }
-
-        /*public Claim FindClaimById(int id)
-        {
-            foreach(Claim claim in claimQueue)
-            {
-                if(claim.ClaimID == id)
-                {
-                    return claim;
-                }
-            }
-            return null;
-        }*/
     }
 }

@@ -54,7 +54,7 @@ namespace MenuRepo_Tests
         }
 
         [TestMethod]
-        public void RemoveMenuItem_ShouldGetNull()
+        public void RemoveMenuItem_ShouldHaveZeroItems()
         {
             MenuRepo repo = new MenuRepo();
             List<string> ing = new List<string>() { "ing1", "ing2", "ing3" };
@@ -68,7 +68,7 @@ namespace MenuRepo_Tests
             };
             repo.AddMenuItem(menu);
             repo.RemoveMenuItem(menu.ItemNumber);
-            Assert.IsNull(repo.GetMenuItems());
+            Assert.IsTrue(repo.GetMenuItems().Count == 0);
         }
     }
 }

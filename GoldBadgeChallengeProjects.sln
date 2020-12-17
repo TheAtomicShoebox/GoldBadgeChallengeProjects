@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsConsole", "ClaimsCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuRepo_Tests", "MenuRepo_Tests\MenuRepo_Tests.csproj", "{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimRepo_Tests", "ClaimRepo_Tests\ClaimRepo_Tests.csproj", "{829E01B6-DF6B-48A8-96B6-5E1794E25A47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF576ACB-20CF-4A11-B7CB-F8F7C73494A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829E01B6-DF6B-48A8-96B6-5E1794E25A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829E01B6-DF6B-48A8-96B6-5E1794E25A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829E01B6-DF6B-48A8-96B6-5E1794E25A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829E01B6-DF6B-48A8-96B6-5E1794E25A47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

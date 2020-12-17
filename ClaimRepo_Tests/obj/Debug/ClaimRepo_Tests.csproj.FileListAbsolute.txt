@@ -1,0 +1,16 @@
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\ClaimRepo_Tests.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\ClaimRepo_Tests.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\ClaimRepo.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\ClaimRepo.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\obj\Debug\ClaimRepo_Tests.csprojAssemblyReference.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\obj\Debug\ClaimRepo_Tests.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\obj\Debug\ClaimRepo_Tests.csproj.CopyComplete
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\obj\Debug\ClaimRepo_Tests.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\ClaimRepo_Tests\obj\Debug\ClaimRepo_Tests.pdb
