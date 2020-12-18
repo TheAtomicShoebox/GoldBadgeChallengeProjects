@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            ProgramUI ui = new ProgramUI();
+            BadgeUI ui = new BadgeUI();
             ui.Run();
         }
     }

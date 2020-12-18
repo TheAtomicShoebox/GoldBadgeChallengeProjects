@@ -4,3 +4,4 @@ D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgeRepo\bin\D
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgeRepo\bin\Debug\BadgeRepo.pdb
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgeRepo\obj\Debug\BadgeRepo.dll
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgeRepo\obj\Debug\BadgeRepo.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgeRepo\obj\Debug\BadgeRepo.csprojAssemblyReference.cache

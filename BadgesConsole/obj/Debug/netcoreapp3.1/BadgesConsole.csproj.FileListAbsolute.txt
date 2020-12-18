@@ -11,3 +11,7 @@ D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\o
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.dll
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.pdb
 D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.genruntimeconfig.cache
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgeRepo.dll
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgeRepo.pdb
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\bin\Debug\netcoreapp3.1\BadgeRepo.dll.config
+D:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallengeProjects\BadgesConsole\obj\Debug\netcoreapp3.1\BadgesConsole.csproj.CopyComplete

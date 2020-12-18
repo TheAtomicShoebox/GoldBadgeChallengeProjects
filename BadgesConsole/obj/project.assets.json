@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "BadgeRepo/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BadgeRepo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BadgeRepo.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BadgeRepo/1.0.0": {
+      "type": "project",
+      "path": "../BadgeRepo/BadgeRepo.csproj",
+      "msbuildProject": "../BadgeRepo/BadgeRepo.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "BadgeRepo >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Adam\\.nuget\\packages\\": {},
@@ -39,7 +57,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgeRepo\\BadgeRepo.csproj": {
+              "projectPath": "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgeRepo\\BadgeRepo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

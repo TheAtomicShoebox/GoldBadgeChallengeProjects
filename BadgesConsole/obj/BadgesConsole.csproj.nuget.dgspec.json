@@ -4,6 +4,16 @@
     "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgesConsole\\BadgesConsole.csproj": {}
   },
   "projects": {
+    "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgeRepo\\BadgeRepo.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgeRepo\\BadgeRepo.csproj",
+        "projectName": "BadgeRepo",
+        "projectPath": "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgeRepo\\BadgeRepo.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgesConsole\\BadgesConsole.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +41,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgeRepo\\BadgeRepo.csproj": {
+                "projectPath": "D:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallengeProjects\\BadgeRepo\\BadgeRepo.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

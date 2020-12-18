@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static Claims.Claim;
 
 namespace Claims
@@ -153,7 +150,7 @@ namespace Claims
         {
             if (!verbose)
             {
-                Console.WriteLine($"{claim.ClaimID}\t{claim.Type}\t{claim.Description,-30}{claim.Amount}\t{claim.DateOfIncident.ToString("d"),-15}{claim.DateOfClaim.ToString("d"),-15}{claim.IsValid,-5}");
+                Console.WriteLine($"{claim.ClaimID}\t{claim.Type}\t{claim.Description,-30}{claim.Amount}\t{claim.DateOfIncident,-15:d}{claim.DateOfClaim,-15:d}{claim.IsValid,-5}");
             }
             else
             {
@@ -161,8 +158,8 @@ namespace Claims
                     $"Type: {claim.Type}\n" +
                     $"Description: {claim.Description}\n" +
                     $"Amount: {claim.Amount}\n" +
-                    $"DateOfAccident: {claim.DateOfIncident.ToString("d")}\n" +
-                    $"DateOfClaim: {claim.DateOfClaim.ToString("d")}\n" +
+                    $"DateOfAccident: {claim.DateOfIncident:d}\n" +
+                    $"DateOfClaim: {claim.DateOfClaim:d}\n" +
                     $"IsValid: {claim.IsValid}\n");
             }
         }
@@ -265,7 +262,7 @@ namespace Claims
             try
             {
                 DateTime dateTimeResponse = DateTime.Parse(response);
-                Console.WriteLine($"Is this correct: {dateTimeResponse.ToString("d")} (y/n)");
+                Console.WriteLine($"Is this correct: {dateTimeResponse:d} (y/n)");
                 if(!GetYesNoResponse("y", "n"))
                 {
                     GetDateTimeResponse(quitCharacter);

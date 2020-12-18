@@ -6,4 +6,8 @@
     <RootNamespace>Badges</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BadgeRepo\BadgeRepo.csproj" />
+  </ItemGroup>
+
 </Project>

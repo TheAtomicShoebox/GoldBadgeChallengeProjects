@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "BadgesConsole/1.0.0": {
+        "dependencies": {
+          "BadgeRepo": "1.0.0"
+        },
         "runtime": {
           "BadgesConsole.dll": {}
+        }
+      },
+      "BadgeRepo/1.0.0": {
+        "runtime": {
+          "BadgeRepo.dll": {}
         }
       }
     }
   },
   "libraries": {
     "BadgesConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BadgeRepo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

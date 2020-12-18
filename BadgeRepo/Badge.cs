@@ -9,7 +9,7 @@ namespace Badges
 
         public Badge()
         {
-
+            DoorNames = new List<string>();
         }
 
         public Badge(int id, List<string> names)
